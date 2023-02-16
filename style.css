@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'android';
+    src: url('fontes/idroid.otf')  format('opentype');
+    font-weight: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/*VARIAVEIS DO SITE*/
+:root{
+    --main-azul:#4a8ce1;
+    --main-azul-escuro: #113665;
+    --main-azul-claro: #79AFF7;
+    --main-azul-marinho: #2569C2;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'android', cursive;
+}
+/*PARTE DO BODY EM GERAL*/
+body{
+    font-family: var(--fonte-padrao);
+    background-color: var(--main-azul-claro);
+}
+a.externo::after{
+    content: '\00A0\1F517';
+}
+header{
+    padding: 40px;
+    min-height: 100px;
+    background-image: linear-gradient(-180deg, var(--main-azul) , var(--main-azul-escuro));
+}
+header > h1{
+    font-family: --fonte-destaque;
+    font-size: 3em;
+    font-family: var(--fonte-destaque);
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.525);
+}
+main{
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto auto 20px auto;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.436);
+    background-color: white;
+}
+main > img{
+    max-width: 300px;
+}
+main img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+article> h2{
+    font-family: var(--fonte-android);
+}
+article > h3{
+    font-family: var(--fonte-android);
+}
+h1{
+    color:white;
+    text-align: center;
+}
+h2, h3{
+    color: #113665
+}
+.marca{
+    background-image: linear-gradient( 65deg, #4a8be188, #79b0f74a, rgba(255, 255, 255, 0.153));
+}
+header > p{
+    color:white;
+    font-family: var(--fonte-padrao);
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto auto 20px auto;
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.525);
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+article > p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 1em;
+}
+main strong{
+    color: var(--main-azul-marinho);
+    font-weight: bold;
+    padding: 2px 6px;
+}
+article a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--main-azul-marinho);
+    background-color:  #8db8f0a8;
+    padding: 2px 4px;
+    border-radius: 5px;
+}
+article a:hover{
+    text-shadow: 1px 1px 4px #0e2df470;
+    text-decoration: underline;
+}
+p > a {
+    color: #2569C2;
+}
+ul{
+    list-style: none;
+}
+div > ul{
+    list-style: disc;
+}
+div.video{
+    background-color: var(--main-azul-escuro);
+    margin: 0px -20px 30px -20px;
+    padding: 10px;
+    padding-bottom: 50%;
+    position: relative
+}
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+aside{
+    background-color: var(--main-azul-claro);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.55);
+    margin: 5px;
+}
+abbr{
+    text-decoration: none;
+}
+aside > h4{
+    text-align: center;
+    color:white;
+    background-color: var(--main-azul-marinho);
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+aside > ul{
+    list-style-type:'\2714\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+aside  a{
+    font-weight: bold;
+    color: var(--main-azul-escuro);
+}
+footer{
+    background-color: var(--main-azul-escuro);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+/*PARTE DO NAVBAR*/
+nav{
+    font-size: 13px;
+    padding: 10px;
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.537);
+    background-color: var(--main-azul-escuro);
+}
+nav > a{
+    padding: 10px;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+nav > a:hover{
+    background-color: var(--main-azul-claro);
+    color: var(--main-azul-escuro);
+    border-radius: 10px;
+}
+
+/*PARTE DO CONTAINER*/
