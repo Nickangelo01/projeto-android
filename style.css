@@ -53,7 +53,10 @@ main{
     background-color: white;
 }
 main > img{
-    max-width: 250px;
+    max-width: 350px;
+}
+.celular{
+    min-width:300px;
 }
 main img.pequena{
     max-width: 300px;
