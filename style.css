@@ -53,10 +53,10 @@ main{
     background-color: white;
 }
 main > img{
-    max-width: 300px;
+    max-width: 275px;
 }
 main img.pequena{
-    max-width: 350px;
+    max-width: 300px;
     display: block;
     margin: auto;
 }
